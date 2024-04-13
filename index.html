@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload, Display, Search, and Export Matching Text</title>
+</head>
+
+<body>
+  <h1>Upload a Text File</h1>
+  <form id="uploadForm">
+    <input type="file" id="fileInput" accept=".txt" required>
+    <button type="button" onclick="uploadFile()">Upload and Display</button>
+  </form>
+  <input type="text" id="searchInput" placeholder="Enter text to search">
+  <button type="button" onclick="searchText()">Search and Display Matches</button>
+  <button type="button" onclick="exportMatches()">Export Matches to Text File</button>
+    <button type="button" onclick="detectIPAddresses()">Detect IP Addresses</button>
+  <div id="ipCount"></div>
+  <div id="fileContent" style="white-space: pre-wrap; border: 1px solid #ccc; padding: 10px; margin-top: 20px;"></div>
+
+  <script src="upload.js"></script>
+</body>
+
+</html>
